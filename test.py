@@ -1,4 +1,4 @@
-output_counter = 0
+output_counter = -1
 output_was_called = False
 output_limit = -1
 captured_output = None
@@ -14,13 +14,48 @@ def output(x):
     if output_counter == output_limit:
         raise StopIteration("Done")
 
-def get_nth_output(filename, n):
+def get_file(filename):
     with open(filename, "r") as fp:
-        code = fp.read()
-        try:
-            exec(code)
-        except StopIteration:
-            pass
-        return captured_output
+        return fp.read().strip()
 
-print(get_nth_output("2.py", 1))
+def get_nth_output(filename, n):
+    global output_counter
+    global output_limit
+    global output_was_called
+
+    output_counter = -1
+    output_limit = n
+    output_was_called = False
+
+    try:
+        exec(get_file(filename))
+    except StopIteration:
+        pass
+
+    assert output_was_called
+    assert output_counter == output_limit
+    return captured_output
+
+def count_outputs(filename):
+    global output_counter
+    global output_limit
+
+    output_limit = -1
+    output_counter = -1
+    exec(get_file(filename))
+    return output_counter + 1
+
+print("Testing 0.py")
+assert count_outputs("0.py") == 0
+
+print("Testing 1.py")
+assert count_outputs("1.py") == 1
+assert get_nth_output("1.py", 0) == get_file("0.py")
+
+print("Testing 2.py")
+assert count_outputs("2.py") == 1
+assert get_nth_output("2.py", 0) == get_file("1.py")
+
+print("Testing 3.py")
+assert count_outputs("3.py") == 1
+assert get_nth_output("3.py", 0) == get_file("2.py")
