@@ -17,7 +17,7 @@ def output(x):
         raise StopIteration("Done")
 
 def escape(s):
-    return s.replace('\\', '\\\\').replace('"', '\\"')
+    return s.replace('\\', '\\\\').replace('\n', '\\n').replace('"', '\\"')
 
 def get_file(filename):
     with open(filename, "r") as fp:
