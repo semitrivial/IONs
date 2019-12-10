@@ -3,6 +3,6 @@ output(\"\"\"
 X=\"\"
 while True:
     output(X)
-    X = \"\\\"\" + escape(X) + \"\\\"\"
+    X = \"output(\\\\\\\"\" + escape(X) + \"\\\\\\\")\"
 \"\"\")
 """)

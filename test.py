@@ -74,3 +74,9 @@ assert get_nth_output("ω.py", 3) == get_file("3.py")
 
 print("Testing ω+1.py")
 test_sole_output("ω+1.py", get_file("ω.py"))
+
+print("Testing ω+2.py")
+test_sole_output("ω+2.py", get_file("ω+1.py"))
+
+print("Testing ω+3.py")
+test_sole_output("ω+3.py", get_file("ω+2.py"))
