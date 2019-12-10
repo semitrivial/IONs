@@ -9,7 +9,7 @@ while True:
 while True:
     output(X)
     X = \"output(\\\"\\\"\\\"\\n\" + escape(X) + \"\\n\\\"\\\"\\\")\"
-"""
+""".strip()
 
 while True:
     output(X)
