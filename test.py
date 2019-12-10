@@ -50,20 +50,21 @@ def count_outputs(filename):
     exec(get_file(filename))
     return output_counter + 1
 
+def test_sole_output(filename, expected):
+    assert count_outputs(filename) == 1
+    assert get_nth_output(filename, 0) == expected
+
 print("Testing 0.py")
 assert count_outputs("0.py") == 0
 
 print("Testing 1.py")
-assert count_outputs("1.py") == 1
-assert get_nth_output("1.py", 0) == get_file("0.py")
+test_sole_output("1.py", get_file("0.py"))
 
 print("Testing 2.py")
-assert count_outputs("2.py") == 1
-assert get_nth_output("2.py", 0) == get_file("1.py")
+test_sole_output("2.py", get_file("1.py"))
 
 print("Testing 3.py")
-assert count_outputs("3.py") == 1
-assert get_nth_output("3.py", 0) == get_file("2.py")
+test_sole_output("3.py", get_file("2.py"))
 
 print("Testing ω.py")
 assert get_nth_output("ω.py", 0) == get_file("0.py")
@@ -72,5 +73,4 @@ assert get_nth_output("ω.py", 2) == get_file("2.py")
 assert get_nth_output("ω.py", 3) == get_file("3.py")
 
 print("Testing ω+1.py")
-assert count_outputs("ω+1.py") == 1
-assert get_nth_output("ω+1.py", 0) == get_file("ω.py")
+test_sole_output("ω+1.py", get_file("ω.py"))
