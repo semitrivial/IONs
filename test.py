@@ -97,3 +97,8 @@ assert get_nth_output("w*3.py", 0) == get_file("w*2.py")
 assert get_nth_output("w*3.py", 1) == get_file("w*2+1.py")
 assert get_nth_output("w*3.py", 2) == get_file("w*2+2.py")
 assert get_nth_output("w*3.py", 3) == get_file("w*2+3.py")
+
+print("Testing w^2.py")
+assert get_nth_output("w^2.py", 0) == get_file("w.py")
+assert get_nth_output("w^2.py", 1) == get_file("w*2.py")
+assert get_nth_output("w^2.py", 2) == get_file("w*3.py")
