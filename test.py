@@ -94,3 +94,4 @@ test_sole_output("w*2+3.py", get_file("w*2+2.py"))
 
 print("Testing w*3.py")
 assert get_nth_output("w*3.py", 0) == get_file("w*2.py")
+assert get_nth_output("w*3.py", 1) == get_file("w*2+1.py")
