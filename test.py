@@ -23,7 +23,7 @@ def get_file(filename):
     with open(filename, "r") as fp:
         return fp.read().strip()
 
-def get_nth_output(filename, n):
+def get_nth_output(str, n):
     global output_counter
     global output_limit
     global output_was_called
@@ -33,7 +33,7 @@ def get_nth_output(filename, n):
     output_was_called = False
 
     try:
-        exec(get_file(filename))
+        exec(str)
     except StopIteration:
         pass
 
@@ -41,64 +41,86 @@ def get_nth_output(filename, n):
     assert output_counter == output_limit
     return captured_output
 
-def count_outputs(filename):
+def count_outputs(str, upper_limit=99):
     global output_counter
     global output_limit
 
-    output_limit = -1
+    output_limit = upper_limit
     output_counter = -1
-    exec(get_file(filename))
+    exec(str)
+
+    if output_counter == upper_limit:
+        raise ValueError("Count_outputs called on an apparently infinite sequence")
+
     return output_counter + 1
 
-def test_sole_output(filename, expected):
-    assert count_outputs(filename) == 1
-    assert get_nth_output(filename, 0) == expected
+def get_sole_output(str):
+    assert count_outputs(str) == 1
+    return get_nth_output(str, 0)
+
+def test_after_decrements(str, test_fnc, num_decrements):
+    if num_decrements == 0:
+        return test_fnc(str)
+    else:
+        return test_after_decrements(get_sole_output(str), test_fnc, num_decrements - 1)
+
+def looks_like_zero(str):
+    return count_outputs(str) == 0
 
 print("Testing 0.py")
-assert count_outputs("0.py") == 0
+assert looks_like_zero(get_file("0.py"))
 
-print("Testing 1.py")
-test_sole_output("1.py", get_file("0.py"))
+print("Testing 1.py, 2.py, 3.py")
+assert test_after_decrements(get_file("1.py"), looks_like_zero, 1)
+assert test_after_decrements(get_file("2.py"), looks_like_zero, 2)
+assert test_after_decrements(get_file("3.py"), looks_like_zero, 3)
 
-print("Testing 2.py")
-test_sole_output("2.py", get_file("1.py"))
-
-print("Testing 3.py")
-test_sole_output("3.py", get_file("2.py"))
+def looks_like_omega(str):
+    i = 0
+    while i < 5:
+        x = get_nth_output(str, i)
+        if not test_after_decrements(x, looks_like_zero, i):
+            return False
+        i += 1
+    return True
 
 print("Testing w.py")
-assert get_nth_output("w.py", 0) == get_file("0.py")
-assert get_nth_output("w.py", 1) == get_file("1.py")
-assert get_nth_output("w.py", 2) == get_file("2.py")
-assert get_nth_output("w.py", 3) == get_file("3.py")
+assert looks_like_omega(get_file("w.py"))
 
-print("Testing w+1.py")
-test_sole_output("w+1.py", get_file("w.py"))
+print("Testing w+1.py, w+2.py, w+3.py")
+assert test_after_decrements(get_file("w+1.py"), looks_like_omega, 1)
+assert test_after_decrements(get_file("w+2.py"), looks_like_omega, 2)
+assert test_after_decrements(get_file("w+3.py"), looks_like_omega, 3)
 
-print("Testing w+2.py")
-test_sole_output("w+2.py", get_file("w+1.py"))
+def looks_like_omega_times2(str):
+    i = 0
+    while i < 5:
+        x = get_nth_output(str, i)
+        if not test_after_decrements(x, looks_like_omega, i):
+            return False
+        i += 1
+    return True
 
-print("Testing w+3.py")
-test_sole_output("w+3.py", get_file("w+2.py"))
+print("Testing w*2.py, w*2+1.py, w*2+2.py, w*2+3.py")
+assert looks_like_omega_times2(get_file("w*2.py"))
+assert test_after_decrements(get_file("w*2+1.py"), looks_like_omega_times2, 1)
+assert test_after_decrements(get_file("w*2+2.py"), looks_like_omega_times2, 2)
+assert test_after_decrements(get_file("w*2+3.py"), looks_like_omega_times2, 3)
 
-print("Testing w*2.py")
-assert get_nth_output("w*2.py", 0) == get_file("w.py")
-assert get_nth_output("w*2.py", 1) == get_file("w+1.py")
-assert get_nth_output("w*2.py", 2) == get_file("w+2.py")
-assert get_nth_output("w*2.py", 3) == get_file("w+3.py")
+def looks_like_omega_times3(str):
+    i = 0
+    while i < 5:
+        x = get_nth_output(str, i)
+        if not test_after_decrements(x, looks_like_omega_times2, i):
+            return False
+        i += 1
+    return True
 
-print("Testing w*2+1.py, w*2+2.py, w*2+3.py")
-test_sole_output("w*2+1.py", get_file("w*2.py"))
-test_sole_output("w*2+2.py", get_file("w*2+1.py"))
-test_sole_output("w*2+3.py", get_file("w*2+2.py"))
 
 print("Testing w*3.py")
-assert get_nth_output("w*3.py", 0) == get_file("w*2.py")
-assert get_nth_output("w*3.py", 1) == get_file("w*2+1.py")
-assert get_nth_output("w*3.py", 2) == get_file("w*2+2.py")
-assert get_nth_output("w*3.py", 3) == get_file("w*2+3.py")
+assert looks_like_omega_times3(get_file("w*3.py"))
 
-print("Testing w^2.py")
-assert get_nth_output("w^2.py", 0) == get_file("w.py")
-assert get_nth_output("w^2.py", 1) == get_file("w*2.py")
-assert get_nth_output("w^2.py", 2) == get_file("w*3.py")
+def looks_like_omegasquared(str):
+    assert looks_like_omega(get_nth_output(str, 0))
+    assert looks_like_omega_times2(get_nth_output(str, 1))
+    assert looks_like_omega_times3(get_nth_output(str, 2))
