@@ -1,3 +1,5 @@
+# _*_ coding: utf _*_
+
 output_counter = -1
 output_was_called = False
 output_limit = -1
@@ -13,6 +15,9 @@ def output(x):
     captured_output = x
     if output_counter == output_limit:
         raise StopIteration("Done")
+
+def escape(s):
+    return s.replace('\\', '\\\\').replace('"', '\\"')
 
 def get_file(filename):
     with open(filename, "r") as fp:
@@ -59,3 +64,9 @@ assert get_nth_output("2.py", 0) == get_file("1.py")
 print("Testing 3.py")
 assert count_outputs("3.py") == 1
 assert get_nth_output("3.py", 0) == get_file("2.py")
+
+print("Testing ω.py")
+assert get_nth_output("ω.py", 0) == get_file("0.py")
+assert get_nth_output("ω.py", 1) == get_file("1.py")
+assert get_nth_output("ω.py", 2) == get_file("2.py")
+assert get_nth_output("ω.py", 3) == get_file("3.py")
