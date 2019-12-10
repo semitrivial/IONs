@@ -12,7 +12,7 @@ def output(x):
 
     output_was_called = True
     output_counter += 1
-    captured_output = x
+    captured_output = x.strip()
     if output_counter == output_limit:
         raise StopIteration("Done")
 
@@ -70,3 +70,7 @@ assert get_nth_output("ω.py", 0) == get_file("0.py")
 assert get_nth_output("ω.py", 1) == get_file("1.py")
 assert get_nth_output("ω.py", 2) == get_file("2.py")
 assert get_nth_output("ω.py", 3) == get_file("3.py")
+
+print("Testing ω+1.py")
+assert count_outputs("ω+1.py") == 1
+assert get_nth_output("ω+1.py", 0) == get_file("ω.py")
