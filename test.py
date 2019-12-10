@@ -86,3 +86,6 @@ assert get_nth_output("ω*2.py", 0) == get_file("ω.py")
 assert get_nth_output("ω*2.py", 1) == get_file("ω+1.py")
 assert get_nth_output("ω*2.py", 2) == get_file("ω+2.py")
 assert get_nth_output("ω*2.py", 3) == get_file("ω+3.py")
+
+print("Testing ω*2+1.py")
+test_sole_output("ω*2+1.py", get_file("ω*2.py"))
