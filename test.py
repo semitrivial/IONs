@@ -83,6 +83,23 @@ def get_sole_output(x):
 def is_zero(x):
     return count_outputs(x, upper_limit=1) == 0
 
+def resembles(x, y):
+    if is_zero(x):
+        return is_zero(y)
+    if is_zero(y):
+        return False
+
+    if count_outputs(x, upper_limit=1) == 1:
+        if count_outputs(y, upper_limit=1) != 1:
+            return False
+        else:
+            return resembles(x[0], y[0])
+
+    if count_outputs(y, upper_limit=1) == 1:
+        return False
+
+    return resembles(x[0],y[0]) and resembles(x[1],y[1]) and resembles(x[2],y[2])
+
 print("Testing 0.py")
 assert is_zero(ord_file("0.py"))
 
