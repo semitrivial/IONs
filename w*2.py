@@ -1,10 +1,4 @@
-X="""
-X=""
-
-while True:
-    output(X)
-    X = "output('" + escape(X) + "')"
-"""
+X=get_file('w.py')
 
 while True:
     output(X)

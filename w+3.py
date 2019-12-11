@@ -1,11 +1,1 @@
-output("""
-output('''
-output(\"""
-X=""
-
-while True:
-    output(X)
-    X = "output('" + escape(X) + "')"
-\""")
-''')
-""")
+output(get_file('w+2.py'))
