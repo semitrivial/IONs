@@ -71,9 +71,6 @@ def count_outputs(x, upper_limit=9):
     output_counter = -1
     try_exec(x)
 
-    if output_counter == upper_limit:
-        raise ValueError("Count_outputs called on an apparently infinite sequence")
-
     return output_counter + 1
 
 def get_sole_output(x):
@@ -99,6 +96,9 @@ def resembles(x, y):
         return False
 
     return resembles(x[0],y[0]) and resembles(x[1],y[1]) and resembles(x[2],y[2])
+
+assert resembles(ord_file("w^2*3.py"), ord_file("w^2*3.py"))
+assert not resembles(ord_file("w^2*3.py"), ord_file("w^2*2.py"))
 
 print("Testing 0.py")
 assert is_zero(ord_file("0.py"))
