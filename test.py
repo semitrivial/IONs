@@ -148,3 +148,11 @@ def looks_like_omegasquared_plus_omegatimes2(x):
     assert looks_like_omegasquared_plus_omega(x[2]-2)
     return True
 assert looks_like_omegasquared_plus_omegatimes2(ord_file("w^2+w*2.py"))
+
+print("Testing w^2*2.py")
+def looks_like_omegasquared_times2(x):
+    assert looks_like_omegasquared(x[0])
+    assert looks_like_omegasquared_plus_omega(x[1])
+    assert looks_like_omegasquared_plus_omegatimes2(x[2])
+    return True
+assert looks_like_omegasquared_times2(ord_file("w^2*2.py"))
