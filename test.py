@@ -97,6 +97,7 @@ def resembles(x, y):
 
     return resembles(x[0],y[0]) and resembles(x[1],y[1]) and resembles(x[2],y[2])
 
+print("Testing test infrastructure")
 assert resembles(ord_file("w^2*3.py"), ord_file("w^2*3.py"))
 assert not resembles(ord_file("w^2*3.py"), ord_file("w^2*2.py"))
 
