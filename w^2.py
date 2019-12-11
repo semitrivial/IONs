@@ -6,11 +6,11 @@ RIGHT="""
 \"\"\"
 while True:
     output(X)
-    X = "\"" + escape(X) + "\""
+    X = \"output(\\\"\\\"\\\"" + escape(X) + "\\\"\\\"\\\")\"
 """
 
 X=""
 
 while True:
-    X = LEFT + X + RIGHT
+    X = LEFT + escape(X) + RIGHT
     output(X)
