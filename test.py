@@ -124,5 +124,7 @@ def looks_like_omegasquared(str):
     assert looks_like_omega(get_nth_output(str, 0))
     assert looks_like_omega_times2(get_nth_output(str, 1))
     assert looks_like_omega_times3(get_nth_output(str, 2))
+    return True
 
+print("Testing w^2.py")
 assert looks_like_omegasquared(get_file("w^2.py"))
