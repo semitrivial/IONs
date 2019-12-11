@@ -128,3 +128,8 @@ def looks_like_omegasquared(str):
 
 print("Testing w^2.py")
 assert looks_like_omegasquared(get_file("w^2.py"))
+
+print("Testing w^2+w.py")
+assert test_after_decrements(get_nth_output(get_file("w^2+w.py"), 0), looks_like_omegasquared, 0)
+assert test_after_decrements(get_nth_output(get_file("w^2+w.py"), 1), looks_like_omegasquared, 1)
+assert test_after_decrements(get_nth_output(get_file("w^2+w.py"), 2), looks_like_omegasquared, 2)
