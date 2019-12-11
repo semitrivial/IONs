@@ -9,5 +9,5 @@ while True:
 X=get_file('w^2.py')
 
 while True:
-    X = TEMPLATE.format(escape(X))
     output(X)
+    X = TEMPLATE.format(escape(X))
