@@ -118,7 +118,8 @@ def looks_like_omega(x):
     return True
 
 print("Testing w.py")
-assert looks_like_omega(ord_file("w.py"))
+omega = ord_file("w.py")
+assert looks_like_omega(omega)
 
 print("Testing w+1.py, w+2.py, w+3.py")
 assert looks_like_omega(ord_file("w+1.py")-1)
@@ -182,9 +183,18 @@ def minus_w_passes(x, test_fnc):
     assert test_fnc(x[3]-3)
     return True
 
+def add_omega(x):
+    return Notation("""
+X='''"""+escape(x.txt)+"""'''
+while True:
+    output(X)
+    X = "output('''" + escape(X) + "''')"
+""")
+
 print("Testing w^2*3.py")
 def looks_like_omegasquared_times3(x):
-    assert looks_like_omegasquared_times2(x[0])
-    assert minus_w_passes(x[1], looks_like_omegasquared_times2)
+    assert resembles(x[0], ord_file("w^2*2.py"))
+    assert resembles(x[1], add_omega(x[0]))
+    assert resembles(x[2], add_omega(x[1]))
     return True
 assert looks_like_omegasquared_times3(ord_file("w^2*3.py"))
