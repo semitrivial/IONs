@@ -1,4 +1,4 @@
-X = get_file('w^2+w.py')
+X=get_file('w^2+w.py')
 
 while True:
     output(X)
