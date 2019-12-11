@@ -101,11 +101,9 @@ def looks_like_omega_times2(str):
         i += 1
     return True
 
-print("Testing w*2.py, w*2+1.py, w*2+2.py, w*2+3.py")
+print("Testing w*2.py, w*2+1.py")
 assert looks_like_omega_times2(get_file("w*2.py"))
 assert test_after_decrements(get_file("w*2+1.py"), looks_like_omega_times2, 1)
-assert test_after_decrements(get_file("w*2+2.py"), looks_like_omega_times2, 2)
-assert test_after_decrements(get_file("w*2+3.py"), looks_like_omega_times2, 3)
 
 def looks_like_omega_times3(str):
     i = 0
