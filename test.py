@@ -77,11 +77,11 @@ def count_outputs(x, upper_limit=9):
     return output_counter + 1
 
 def get_sole_output(x):
-    assert count_outputs(x) == 1
+    assert count_outputs(x, upper_limit=1) == 1
     return x[0]
 
 def is_zero(x):
-    return count_outputs(x) == 0
+    return count_outputs(x, upper_limit=1) == 0
 
 print("Testing 0.py")
 assert is_zero(ord_file("0.py"))
