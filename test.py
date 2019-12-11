@@ -156,3 +156,17 @@ def looks_like_omegasquared_times2(x):
     assert looks_like_omegasquared_plus_omegatimes2(x[2])
     return True
 assert looks_like_omegasquared_times2(ord_file("w^2*2.py"))
+
+def minus_w_passes(x, test_fnc):
+    assert test_fnc(x[0])
+    assert test_fnc(x[1]-1)
+    assert test_fnc(x[2]-2)
+    assert test_fnc(x[3]-3)
+    return True
+
+print("Testing w^2*3.py")
+def looks_like_omegasquared_times3(x):
+    assert looks_like_omegasquared_times2(x[0])
+    assert minus_w_passes(x[1], looks_like_omegasquared_times2)
+    return True
+assert looks_like_omegasquared_times3(ord_file("w^2*3.py"))
