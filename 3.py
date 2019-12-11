@@ -1,1 +1,5 @@
-output("output(\"output(\\\"\\\")\")")
+output("""
+    output(\"""
+        output("")
+    \""")
+""")
