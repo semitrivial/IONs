@@ -114,7 +114,7 @@ def looks_like_omega_times2(x):
     assert looks_like_omega(x[2]-2)
     return True
 assert looks_like_omega_times2(ord_file("w*2.py"))
-assert looks_like_omega_times2(ord_file("w*2.py")-1)
+assert looks_like_omega_times2(ord_file("w*2+1.py")-1)
 
 print("Testing w*3.py")
 def looks_like_omega_times3(x):
