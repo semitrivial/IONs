@@ -35,7 +35,7 @@ def try_exec(x):
     try:
         exec(x.txt)
     except StopIteration:
-        raise
+        pass
     except Exception as e:
         print("---")
         print(x.txt)
