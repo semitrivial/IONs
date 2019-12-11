@@ -1,7 +1,6 @@
 output("""
 output(\"\"\"
-X=\\\"\\\"\\\"
-\\\"\\\"\\\".strip()
+X=\\\"\\\"
 
 while True:
     output(X)
