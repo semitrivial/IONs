@@ -1,5 +1,5 @@
 output("""
-    output(\"""
+    output('''
         output("")
-    \""")
+    ''')
 """)
