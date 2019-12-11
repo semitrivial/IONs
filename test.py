@@ -5,6 +5,17 @@ output_was_called = False
 output_limit = -1
 captured_output = None
 
+def try_exec(x):
+    try:
+        exec(x)
+    except StopIteration:
+        raise
+    except Exception as e:
+        print("---")
+        print(x)
+        print("---")
+        raise e
+
 def output(x):
     global output_counter
     global output_was_called
@@ -33,7 +44,7 @@ def get_nth_output(str, n):
     output_was_called = False
 
     try:
-        exec(str)
+        try_exec(str)
     except StopIteration:
         pass
 
@@ -47,7 +58,7 @@ def count_outputs(str, upper_limit=99):
 
     output_limit = upper_limit
     output_counter = -1
-    exec(str)
+    try_exec(str)
 
     if output_counter == upper_limit:
         raise ValueError("Count_outputs called on an apparently infinite sequence")
@@ -128,6 +139,11 @@ print("Testing w^2.py")
 assert looks_like_omegasquared(get_file("w^2.py"))
 
 print("Testing w^2+w.py")
-assert test_after_decrements(get_nth_output(get_file("w^2+w.py"), 0), looks_like_omegasquared, 0)
-assert test_after_decrements(get_nth_output(get_file("w^2+w.py"), 1), looks_like_omegasquared, 1)
-assert test_after_decrements(get_nth_output(get_file("w^2+w.py"), 2), looks_like_omegasquared, 2)
+code=get_file("w^2+w.py")
+assert test_after_decrements(get_nth_output(code, 0), looks_like_omegasquared, 0)
+assert test_after_decrements(get_nth_output(code, 1), looks_like_omegasquared, 1)
+assert test_after_decrements(get_nth_output(code, 2), looks_like_omegasquared, 2)
+
+print("Testing w^2+w*2.py")
+code=get_file("w^2+w*2.py")
+assert looks_like_omegasquared(get_nth_output(get_nth_output(code, 0), 0))
