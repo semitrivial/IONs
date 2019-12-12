@@ -67,14 +67,6 @@ def test_level_4():
         return True
     assert looks_like_omegasquared_times2(ord_file("w^2*2"))
 
-    def add_omega(x):
-        return Notation("""
-X='''"""+escape(x.txt)+"""'''
-while True:
-    output(X)
-    X = "output('''" + escape(X) + "''')"
-""")
-
     print("Testing w^2*3.py")
     def looks_like_omegasquared_times3(x):
         assert resembles(x[0], ord_file("w^2*2"))
@@ -115,3 +107,5 @@ while True:
         assert resembles(x[2], ord_file("w^3+w^2*2"))
         return True
     assert looks_like_omegacubed_times2(ord_file("w^3*2"))
+
+    print("Testing w^3*3.py")

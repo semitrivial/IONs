@@ -102,3 +102,11 @@ def looks_like_omega(x):
     assert is_zero(x[3]-3)
     assert is_zero(x[4]-4)
     return True
+
+def add_omega(x):
+    return Notation("""
+X='''"""+escape(x.txt)+"""'''
+while True:
+    output(X)
+    X = "output('''" + escape(X) + "''')"
+""")
