@@ -1,13 +1,13 @@
 TEMPLATE='''
 TEMPLATE="""
-X=\'''{}\'''
+X=\'\'\'{}\'\'\'
 
 while True:
     output(X)
-    X='output(\"""' + escape(X) + '\""")'
-"""
+    X=\'output(\\\"\\\"\\\"\' + escape(X) + \'\\\"\\\"\\\")\'
+\"\"\"
 
-X=\'''{}\'''
+X=\'\'\'{}\'\'\'
 
 while True:
     output(X)
