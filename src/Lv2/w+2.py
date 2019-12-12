@@ -1,0 +1,1 @@
+output(get_file('w+1.py'))
