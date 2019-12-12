@@ -1,5 +1,3 @@
-# _*_ coding: utf _*_
-
 class Notation:
     def __init__(self, txt):
         self.txt = txt
