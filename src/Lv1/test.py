@@ -13,14 +13,5 @@ def test_level_1():
     assert is_zero(ord_file("2")-2)
     assert is_zero(ord_file("3")-3)
 
-    def looks_like_omega(x):
-        assert is_zero(x[0])
-        assert is_zero(x[1]-1)
-        assert is_zero(x[2]-2)
-        assert is_zero(x[3]-3)
-        assert is_zero(x[4]-4)
-        return True
-
     print("Testing w.py")
-    omega = ord_file("w")
-    assert looks_like_omega(omega)
+    assert looks_like_omega(ord_file("w"))

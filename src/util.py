@@ -94,3 +94,11 @@ def resembles(x, y):
         return False
 
     return resembles(x[0],y[0]) and resembles(x[1],y[1]) and resembles(x[2],y[2])
+
+def looks_like_omega(x):
+    assert is_zero(x[0])
+    assert is_zero(x[1]-1)
+    assert is_zero(x[2]-2)
+    assert is_zero(x[3]-3)
+    assert is_zero(x[4]-4)
+    return True
