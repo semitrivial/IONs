@@ -223,3 +223,11 @@ def looks_like_omegacubed_plus_omegasquared_times2(x):
     assert resembles(x[2], add_omega(x[1]))
     return True
 assert looks_like_omegacubed_plus_omegasquared_times2(ord_file("w^3+w^2*2.py"))
+
+print("Testing w^3*2.py")
+def looks_like_omegacubed_times2(x):
+    assert resembles(x[0], ord_file("w^3.py"))
+    assert resembles(x[1], ord_file("w^3+w^2.py"))
+    assert resembles(x[2], ord_file("w^3+w^2*2.py"))
+    return True
+assert looks_like_omegacubed_times2(ord_file("w^3*2.py"))
