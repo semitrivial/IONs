@@ -1,8 +1,12 @@
 import sys
 
+from util import *
+
 if len(sys.argv) != 2:
     print("Which level would you like to test?")
     exit(0)
+
+set_test_level(int(sys.argv[1]))
 
 if sys.argv[1] == "1":
     from Lv1.test import test_level_1

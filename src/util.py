@@ -24,10 +24,15 @@ class Notation:
         else:
             return get_sole_output(self) - (subtractand-1)
 
+test_level = -1
 output_counter = -1
 output_was_called = False
 output_limit = -1
 captured_output = None
+
+def set_test_level(lv):
+    global test_level
+    test_level = lv
 
 def try_exec(x):
     try:
@@ -59,7 +64,7 @@ def get_file(filename):
         return fp.read()
 
 def ord_file(filename):
-    return Notation(get_file(filename + ".py"))
+    return Notation(get_file("Lv" + str(test_level) + "/" + filename + ".py"))
 
 def count_outputs(x, upper_limit=9):
     global output_counter
@@ -109,4 +114,21 @@ X='''"""+escape(x.txt)+"""'''
 while True:
     output(X)
     X = "output('''" + escape(X) + "''')"
+""")
+
+def add_omega_squared(x):
+    return Notation("""
+TEMPLATE=\"""
+X='''{}'''
+
+while True:
+    output(X)
+    X='output(\\\"""' + escape(X) + '\\\""")'
+\"""
+
+X='''"""+escape(x.txt)+"""'''
+
+while True:
+    output(X)
+    X = TEMPLATE.format(escape(X))
 """)

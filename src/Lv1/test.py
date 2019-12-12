@@ -1,10 +1,6 @@
 from util import *
 
 def test_level_1():
-    print("Testing test infrastructure")
-    assert resembles(ord_file("w^2*3"), ord_file("w^2*3"))
-    assert not resembles(ord_file("w^2*3"), ord_file("w^2*2"))
-
     print("Testing 0.py")
     assert is_zero(ord_file("0"))
 
