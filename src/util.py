@@ -136,3 +136,23 @@ while True:
     output(X)
     X = TEMPLATE.format(escape(X))
 """)
+
+def add_omega_cubed(x):
+    return Notation("""
+TEMPLATE='''
+TEMPLATE=\"""
+X=\\\'''{}\\\'''
+while True:
+    output(X)
+    X='output(\\\\\\\"""' + escape(X) + '\\\\\\\""")'
+\"""
+X=\\\'''{}\\\'''
+while True:
+    output(X)
+    X = TEMPLATE.format(escape(X))
+'''
+X='''"""+escape(x.txt)+"""'''
+while True:
+    output(X)
+    X = TEMPLATE.format("{}", escape(X))
+""")
