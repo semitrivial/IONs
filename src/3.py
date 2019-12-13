@@ -1,5 +1,0 @@
-output("""
-output('''
-output("")
-''')
-""")
