@@ -23,3 +23,7 @@ if sys.argv[1] == "3":
 if sys.argv[1] == "4":
     from Lv4.test import test_level_4
     test_level_4()
+
+if sys.argv[1] == "5":
+    from Lv5.test import test_level_5
+    test_level_5()
