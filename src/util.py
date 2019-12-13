@@ -66,7 +66,7 @@ def get_file(filename):
 def ord_file(filename):
     return Notation(get_file("Lv" + str(test_level) + "/" + filename + ".py"))
 
-def count_outputs(x, upper_limit=9):
+def count_outputs(x, upper_limit=4):
     global output_counter
     global output_limit
 
