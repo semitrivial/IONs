@@ -177,3 +177,11 @@ def looks_like_omega_to4(x):
     assert resembles(x[2], add_omega_cubed(x[1]))
     assert resembles(x[3], add_omega_cubed(x[2]))
     return True
+
+def looks_like_omega_to_omega(x):
+    assert is_zero(get_sole_output(x[0]))
+    assert looks_like_omega(x[1])
+    assert looks_like_omegasquared(x[2])
+    assert looks_like_omegacubed(x[3])
+    assert looks_like_omega_to4(x[4])
+    return True
