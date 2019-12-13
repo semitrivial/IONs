@@ -60,11 +60,12 @@ def escape(s):
     return s.replace('\\', '\\\\').replace('"', '\\"').replace("'", "\\'")
 
 def get_file(filename):
+    filename = "Lv" + str(test_level) + "/" + filename
     with open(filename, "r") as fp:
         return fp.read()
 
 def ord_file(filename):
-    return Notation(get_file("Lv" + str(test_level) + "/" + filename + ".py"))
+    return Notation(get_file(filename + ".py"))
 
 def count_outputs(x, upper_limit=4):
     global output_counter
@@ -84,6 +85,9 @@ def is_zero(x):
     return count_outputs(x, upper_limit=1) == 0
 
 def resembles(x, y):
+    if (x.txt == y.txt):
+        return True
+
     if is_zero(x):
         return is_zero(y)
     if is_zero(y):
