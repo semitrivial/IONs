@@ -52,10 +52,4 @@ def test_level_3():
     assert looks_like_omegasquared_times3(ord_file("w^2*3"))
 
     print("Testing w^3.py")
-    def looks_like_omegacubed(x):
-        assert is_zero(x[0])
-        assert resembles(x[1], ord_file("w^2"))
-        assert resembles(x[2], ord_file("w^2*2"))
-        assert resembles(x[3], ord_file("w^2*3"))
-        return True
     assert looks_like_omegacubed(ord_file("w^3"))
