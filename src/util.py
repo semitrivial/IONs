@@ -170,3 +170,10 @@ def looks_like_omegacubed(x):
     assert resembles(x[2], add_omega_squared(x[1]))
     assert resembles(x[3], add_omega_squared(x[2]))
     return True
+
+def looks_like_omega_to4(x):
+    assert is_zero(x[0])
+    assert looks_like_omegacubed(x[1])
+    assert resembles(x[2], add_omega_cubed(x[1]))
+    assert resembles(x[3], add_omega_cubed(x[2]))
+    return True

@@ -19,12 +19,6 @@ def test_level_5():
     assert looks_like_omegacubed(ord_file("w^3"))
 
     print("Testing w^4.py")
-    def looks_like_omega_to4(x):
-        assert is_zero(x[0])
-        assert resembles(x[1], add_omega_cubed(x[0]))
-        assert resembles(x[2], add_omega_cubed(x[1]))
-        assert resembles(x[3], add_omega_cubed(x[2]))
-        return True
     assert looks_like_omega_to4(ord_file("w^4"))
 
     print("Testing w^w.py")
