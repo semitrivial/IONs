@@ -27,10 +27,4 @@ def test_level_2():
     assert looks_like_omega_times3(ord_file("w*3"))
 
     print("Testing w^2.py")
-    def looks_like_omegasquared(x):
-        assert is_zero(x[0])
-        assert looks_like_omega(x[1])
-        assert looks_like_omega_times2(x[2])
-        assert looks_like_omega_times3(x[3])
-        return True
     assert looks_like_omegasquared(ord_file("w^2"))

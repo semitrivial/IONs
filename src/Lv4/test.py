@@ -13,12 +13,6 @@ def test_level_4():
     assert looks_like_omega(ord_file("w"))
 
     print("Testing w^2.py")
-    def looks_like_omegasquared(x):
-        assert is_zero(x[0])
-        assert looks_like_omega(x[1])
-        assert resembles(x[2], add_omega(x[1]))
-        assert resembles(x[3], add_omega(x[2]))
-        return True
     assert looks_like_omegasquared(ord_file("w^2"))
 
     print("Testing w^3.py")

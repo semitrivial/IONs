@@ -156,3 +156,10 @@ while True:
     output(X)
     X = TEMPLATE.format("{}", escape(X))
 """)
+
+def looks_like_omegasquared(x):
+    assert is_zero(x[0])
+    assert looks_like_omega(x[1])
+    assert resembles(x[2], add_omega(x[1]))
+    assert resembles(x[3], add_omega(x[2]))
+    return True
