@@ -41,8 +41,7 @@ def test_level_5():
 
     print("Testing w^w.py")
     def looks_like_omega_to_omega(x):
-        #import pdb; pdb.set_trace()
-        #assert is_zero(x[0])
+        assert is_zero(get_sole_output(x[0]))
         assert looks_like_omega(x[1])
         assert looks_like_omegasquared(x[2])
         assert looks_like_omegacubed(x[3])
