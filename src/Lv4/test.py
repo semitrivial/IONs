@@ -54,11 +54,26 @@ def test_level_4():
         return True
     assert looks_like_omegacubed_times2(ord_file("w^3*2"))
 
+    print("Testing w^3*2+w^2.py")
+    def looks_like_omegacubed_times2_plus_omegasquared(x):
+        assert looks_like_omegacubed_times2(x[0])
+        assert resembles(x[1], add_omega(x[0]))
+        assert resembles(x[2], add_omega(x[1]))
+        return True
+    assert looks_like_omegacubed_times2_plus_omegasquared(ord_file("w^3*2+w^2"))
+
+    print("Testing w^3*2+w^2*2.py")
+    def looks_like_omegacubed_times2_plus_omegasquared_times2(x):
+        assert looks_like_omegacubed_times2_plus_omegasquared(x[0])
+        assert resembles(x[1], add_omega(x[0]))
+        assert resembles(x[2], add_omega(x[1]))
+    assert looks_like_omegacubed_times2_plus_omegasquared_times2(ord_file("w^3*2+w^2*2"))
+
     print("Testing w^3*3.py")
     assert("Testing w^3*3.py")
     def looks_like_omegacubed_times3(x):
-        assert resembles(x[0], ord_file("w^3*2"))
-        assert resembles(x[1], add_omega_squared(x[0]))
-        assert resembles(x[2], add_omega_squared(x[1]))
+        assert looks_like_omegacubed_times2(x[0])
+        assert looks_like_omegacubed_times2_plus_omegasquared(x[1])
+        assert looks_like_omegacubed_times2_plus_omegasquared_times2(x[2])
         return True
     assert looks_like_omegacubed_times3(ord_file("w^3*3"))
