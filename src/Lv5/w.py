@@ -1,4 +1,4 @@
-TEMPLATE=get_file('0.py')
+TEMPLATE=get_file('1.py')
 TEMPLATE=TEMPLATE.replace('X0=""', 'X0="""X1"""')
 
 X1=""

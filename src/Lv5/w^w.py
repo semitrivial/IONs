@@ -1,6 +1,6 @@
-X=get_file('w.py')
+X=get_file('1.py')
 
-i = 1
+i = 0
 while True:
     output(X)
     Xa = "X" + str(i)
