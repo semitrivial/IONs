@@ -60,7 +60,7 @@ def escape(s):
     return s.replace('\\', '\\\\').replace('"', '\\"').replace("'", "\\'")
 
 def get_file(filename):
-    filename = "Lv" + str(test_level) + "/" + filename
+    filename = "Lv" + str(test_level) + "/compiled/" + filename
     with open(filename, "r") as fp:
         return fp.read()
 
