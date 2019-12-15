@@ -1,4 +1,4 @@
-TEMPLATE=get_file("w.py")
+TEMPLATE=get_file('w.py')
 TEMPLATE=TEMPLATE.replace('X1=""', 'X1="""X2"""')
 
 X2=""
