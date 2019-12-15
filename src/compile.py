@@ -14,6 +14,11 @@ def compile_level(n):
             continue
         compile_file(level, fname, compiled_files)
 
+    try:
+        os.mkdir(level + "/compiled")
+    except Exception:
+        pass
+
     for fname in compiled_files.keys():
         with open(level + "/compiled/" + fname, "w") as fp:
             fp.write(compiled_files[fname])
@@ -41,7 +46,7 @@ def compile_file(level, fname, compiled_files):
 
     left = raw[:get_file_index]
     right = raw[get_file_index+end+len(start_token)+len(end_token):]
-    compiled = left + '"""' + escape(sub_contents) + '"""' + right
+    compiled = left + '"""\n' + escape(sub_contents) + '\n"""' + right
     compiled_files[fname] = compiled
 
 for i in range(top_level):
