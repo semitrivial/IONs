@@ -1,18 +1,17 @@
 X=get_file('1.py')
 
-i = 0
+i = 1
 while True:
     output(X)
-    Xa = "X" + str(i)
-    Xb = "X" + str(i+1)
+    Xi = "X" + str(i)
     X = """
 TEMPLATE = '''"""+escape(X)+"""'''
-TEMPLATE = TEMPLATE.replace('=\\""', '=\\\"\"\""""+Xb+"""\"\"\"')
+TEMPLATE = TEMPLATE.replace('=\\""', '=\\\"\"\""""+Xi+"""\"\"\"')
 
-"""+Xb+"""=""
+"""+Xi+"""=""
 
 while True:
-    output("""+Xb+""")
-    """+Xb+""" = TEMPLATE.replace(\""""+Xb+"""\", escape("""+Xb+"""))
+    output("""+Xi+""")
+    """+Xi+""" = TEMPLATE.replace(\""""+Xi+"""\", escape("""+Xi+"""))
 """
     i += 1
