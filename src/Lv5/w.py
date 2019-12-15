@@ -1,5 +1,4 @@
-TEMPLATE = get_file('1.py')
-TEMPLATE = TEMPLATE.replace('=\""', '=\"""X1"""')
+TEMPLATE = get_file('1.py').replace('=\""', '=\"""X1"""')
 
 X1=""
 

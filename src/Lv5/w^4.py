@@ -1,5 +1,4 @@
-TEMPLATE = get_file('w^3.py')
-TEMPLATE = TEMPLATE.replace('=\""', '=\"""X4"""')
+TEMPLATE = get_file('w^3.py').replace('=\""', '=\"""X4"""')
 
 X4=""
 

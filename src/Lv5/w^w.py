@@ -1,8 +1,7 @@
 X=get_file('1.py')
 
 TEMPLATE="""
-TEMPLATE = '''XX'''
-TEMPLATE = TEMPLATE.replace('=\\""', '=\\\"\"\"Xi\"\"\"')
+TEMPLATE = '''XX'''.replace('=\\""', '=\\\"\"\"Xi\"\"\"')
 
 Xi=""
 
