@@ -7,7 +7,7 @@ while True:
     Xb = "X" + str(i+1)
     X = """
 TEMPLATE = '''"""+escape(X)+"""'''
-TEMPLATE = TEMPLATE.replace('"""+Xa+"""=""', '"""+Xa+"""=\"\"\""""+Xb+"""\"\"\"')
+TEMPLATE = TEMPLATE.replace('=\\""', '=\\\"\"\""""+Xb+"""\"\"\"')
 
 """+Xb+"""=""
 
