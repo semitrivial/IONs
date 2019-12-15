@@ -1,5 +1,5 @@
 TEMPLATE = get_file('w.py')
-TEMPLATE = TEMPLATE.replace('X1=\""', 'X1=\"""X2"""')
+TEMPLATE = TEMPLATE.replace('=\""', '=\"""X2"""')
 
 X2=""
 
