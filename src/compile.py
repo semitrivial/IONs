@@ -1,7 +1,7 @@
 import os
 from util import escape
 
-top_level = 5
+top_level = 6
 
 def compile_level(n):
     level = "Lv" + str(n)
