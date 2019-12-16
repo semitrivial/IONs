@@ -23,3 +23,6 @@ def test_level_6():
 
     print("Testing w^w+w^2.py")
     assert resembles(add_omega_squared(ord_file("w^w")), ord_file("w^w+w^2"))
+
+    print("Testing w^w+w^3.py")
+    assert resembles(add_omega_cubed(ord_file("w^w")), ord_file("w^w+w^3"))
