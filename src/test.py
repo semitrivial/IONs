@@ -1,10 +1,14 @@
 import sys
 
 from util import *
+from compile import compile_files
 
 if len(sys.argv) != 2:
     print("Which level would you like to test?")
     exit(0)
+
+print("Compiling files...")
+compile_files()
 
 set_test_level(int(sys.argv[1]))
 

@@ -49,8 +49,9 @@ def compile_file(level, fname, compiled_files):
     compiled = left + '"""\n' + escape(sub_contents) + '\n"""' + right
     compiled_files[fname] = compiled
 
-for i in range(top_level):
-    compile_level(i+1)
+def compile_files():
+    for i in range(top_level):
+        compile_level(i+1)
 
 
 
