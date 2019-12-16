@@ -32,22 +32,22 @@ def compile_file(level, fname, compiled_files):
     with open(level + "/" + fname) as fp:
         raw = fp.read()
 
-    try:
-        get_file_index = raw.index(start_token)
-    except Exception:
-        compiled_files[fname] = raw
-        return
+    while True:
+        try:
+            get_file_index = raw.index(start_token)
+        except Exception:
+            compiled_files[fname] = raw
+            return
 
-    end = raw[get_file_index+len(start_token):].index(end_token)
-    sub_file = raw[get_file_index+len(start_token):][:end]
-    compile_file(level, sub_file, compiled_files)
+        end = raw[get_file_index+len(start_token):].index(end_token)
+        sub_file = raw[get_file_index+len(start_token):][:end]
+        compile_file(level, sub_file, compiled_files)
 
-    sub_contents = compiled_files[sub_file]
+        sub_contents = compiled_files[sub_file]
 
-    left = raw[:get_file_index]
-    right = raw[get_file_index+end+len(start_token)+len(end_token):]
-    compiled = left + '"""\n' + escape(sub_contents) + '\n"""' + right
-    compiled_files[fname] = compiled
+        left = raw[:get_file_index]
+        right = raw[get_file_index+end+len(start_token)+len(end_token):]
+        raw = left + '"""\n' + escape(sub_contents) + '\n"""' + right
 
 def compile_files():
     for i in range(top_level):
