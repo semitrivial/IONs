@@ -26,3 +26,11 @@ def test_level_6():
 
     print("Testing w^w+w^3.py")
     assert resembles(add_omega_cubed(ord_file("w^w")), ord_file("w^w+w^3"))
+
+    print("Testing w^w*2.py")
+    def looks_like_omega_to_omega_times2(x):
+        assert resembles(x[0], ord_file("w^w+w"))
+        assert resembles(x[1], ord_file("w^w+w^2"))
+        assert resembles(x[2], ord_file("w^w+w^3"))
+        return True
+    assert looks_like_omega_to_omega_times2(ord_file("w^w*2"))
