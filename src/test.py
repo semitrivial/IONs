@@ -8,7 +8,6 @@ if len(sys.argv) != 2:
     exit(0)
 
 print("Compiling files...")
-compile_files()
 
 set_test_level(int(sys.argv[1]))
 

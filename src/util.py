@@ -67,10 +67,10 @@ def get_file(filename):
 def ord_file(filename):
     return Notation(get_file(filename + ".py"))
 
-def apply_file(filename, x):
+def apply_file(filename, fncname, x):
     txt = get_file(filename+".py")+"""
-tmp = fnc(\"\"\""""+escape(x.txt)+"""\"\"\")
-exec(tmp)
+tmp = """+fncname+"""(\"\"\""""+escape(x.txt)+"""\"\"\")
+try_exec(Notation(tmp))
 """
     return Notation(txt)
 
