@@ -3,11 +3,31 @@ import sys
 from util import *
 from compile import compile_files
 
-if len(sys.argv) != 2:
-    print("Which level would you like to test?")
-    exit(0)
-
 print("Compiling files...")
+compile_files()
+
+if len(sys.argv) != 2:
+    from Lv1.test import test_level_1
+    from Lv2.test import test_level_2
+    from Lv3.test import test_level_3
+    from Lv4.test import test_level_4
+    from Lv5.test import test_level_5
+    print("Testing Level 1")
+    set_test_level(1)
+    test_level_1()
+    print("Testing Level 2")
+    set_test_level(2)
+    test_level_2()
+    print("Testing Level 3")
+    set_test_level(3)
+    test_level_3()
+    print("Testing Level 4")
+    set_test_level(4)
+    test_level_4()
+    print("Testing Level 5")
+    set_test_level(5)
+    test_level_5()
+    sys.exit()
 
 set_test_level(int(sys.argv[1]))
 
