@@ -67,13 +67,6 @@ def get_file(filename):
 def ord_file(filename):
     return Notation(get_file(filename + ".py"))
 
-def apply_file(filename, fncname, x):
-    txt = get_file(filename+".py")+"""
-tmp = """+fncname+"""(\"\"\""""+escape(x.txt)+"""\"\"\")
-try_exec(Notation(tmp))
-"""
-    return Notation(txt)
-
 def count_outputs(x, upper_limit=4):
     global output_counter
     global output_limit
