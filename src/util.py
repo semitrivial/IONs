@@ -1,3 +1,6 @@
+def escape(s):
+    return s.replace('\\', '\\\\').replace('"', '\\"').replace("'", "\\'")
+
 class Notation:
     def __init__(self, txt):
         self.txt = txt
@@ -55,9 +58,6 @@ def output(x):
     captured_output = Notation(x)
     if output_counter == output_limit:
         raise StopIteration("Done")
-
-def escape(s):
-    return s.replace('\\', '\\\\').replace('"', '\\"').replace("'", "\\'")
 
 def get_file(filename):
     filename = "Lv" + str(test_level) + "/compiled/" + filename
