@@ -6,7 +6,7 @@
 #
 # This program only has one output, and that output is an ION.
 # Therefore, this program is also an ION.
-# It notates the ordinal 1.
+# It notates the ordinal 2.
 output("""
 output("")
 """)

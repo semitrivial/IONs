@@ -6,7 +6,7 @@
 #
 # This program only has one output, and that output is an ION.
 # Therefore, this program is also an ION.
-# It notates the ordinal 1.
+# It notates the ordinal 3.
 #
 # Examining 0.py, 1.py, 2.py, and 3.py, are you intelligent
 # enough to detect a pattern? Are you intelligent enough to
