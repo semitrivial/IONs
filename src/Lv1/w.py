@@ -10,7 +10,7 @@
 # It notates ω ("omega"), the smallest infinite ordinal.
 #
 # See ../util.py for definition of the "escape" function.
-# For convenience, we shall always assume this "escape"
+# For convenience, we will always assume this "escape"
 # function is defined in the background.
 X=""
 

@@ -1,4 +1,4 @@
-# This program does nothing!
+# This program does nothing.
 #
 # The Intuitive Ordinal Notations (IONs) are defined so that:
 #   "For any computer program P, if all the outputs of P are
