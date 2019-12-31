@@ -1,8 +1,8 @@
 # By meditating upon w.py, w^2.py, w^3.py, and w^4.py, we discern an
 # underlying pattern, which allows us to write a single program that
 # transcends them. This program involves an infinite sequence of
-# wildcards X1, X2, X3, ..., as well as an additional super-wildcard
-# XX. Verify that the first few outputs notate 1, ω, ω^2, ω^3, ω^4.
+# wildcards X1, X2, X3, ..., and super-wildcards XX and Xi. Verify
+# that the first few outputs notate 1, ω, ω^2, ω^3, ω^4.
 X=get_file('1.py')
 
 TEMPLATE="""
