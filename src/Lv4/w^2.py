@@ -1,5 +1,6 @@
+# Next, we review our notation for ω^2.
 TEMPLATE="""
-X='''{}'''
+X='''___'''
 
 while True:
     output(X)
@@ -10,4 +11,4 @@ X=""
 
 while True:
     output(X)
-    X = TEMPLATE.format(escape(X))
+    X = TEMPLATE.replace('___', escape(X))

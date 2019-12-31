@@ -1,16 +1,17 @@
+# Next, we review our notation for ω^3.
 TEMPLATE='''
 TEMPLATE="""
-X=\'''{}\'''
+X=\'''___\'''
 while True:
     output(X)
     X='output(\\\"""' + escape(X) + '\\\""")'
 """
-X=\'''{}\'''
+X=\'''***\'''
 while True:
     output(X)
-    X = TEMPLATE.format(escape(X))
+    X = TEMPLATE.replace('___', escape(X))
 '''
 X=""
 while True:
     output(X)
-    X = TEMPLATE.format("{}", escape(X))
+    X = TEMPLATE.replace('***', escape(X))
