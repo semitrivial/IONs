@@ -1,6 +1,7 @@
 # Intuitive Ordinal Notations (IONs)
 
-In [1], we presented an intuitive ordinal notation system and
+In ["Measuring the Intelligence of an Idealized Mechanical Knowing Agent"](https://semitrivial.github.io/MeasuringIntelligence2019.pdf),
+we presented an intuitive ordinal notation system and
 argued that the task of notating computable ordinals is a
 task that gets directly at the heart of what it means to be
 intelligent. This library contains some
