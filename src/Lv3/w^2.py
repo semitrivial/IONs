@@ -1,5 +1,8 @@
+# We review the program we used to notate ω^2.
+# What if we took this program and used it as the
+# initial value for X in w.py?
 TEMPLATE="""
-X='''{}'''
+X='''___'''
 
 while True:
     output(X)
@@ -10,4 +13,4 @@ X=""
 
 while True:
     output(X)
-    X = TEMPLATE.format(escape(X))
+    X = TEMPLATE.replace('___', escape(X))
