@@ -6,7 +6,7 @@ argued that the task of notating computable ordinals is a
 task that gets directly at the heart of what it means to be
 intelligent. This library contains some
 examples of ordinal notations. Currently, the
-largest example in the library is ω^ω.
+largest example in the library is ω<sup>ω</sup>.
 
 Think of this library as a meditation on automated code generation.
 The ordinal notations in this library are themselves computer
@@ -30,7 +30,7 @@ proceeding to the next.
 * [3](https://github.com/semitrivial/ions/blob/master/src/Lv1/3.py)
 * [ω](https://github.com/semitrivial/ions/blob/master/src/Lv1/w.py)
 
-### Level 2 (ω to ω^2)
+### Level 2 (ω to ω<sup>2</sup>)
 
 * [ω](https://github.com/semitrivial/ions/blob/master/src/Lv2/w.py)
 * [ω+1](https://github.com/semitrivial/ions/blob/master/src/Lv2/w+1.py)
@@ -40,9 +40,9 @@ proceeding to the next.
 * [ω*2+1](https://github.com/semitrivial/ions/blob/master/src/Lv2/w*2+1.py)
 * [ω*2+2](https://github.com/semitrivial/ions/blob/master/src/Lv2/w*2+2.py)
 * [ω*3](https://github.com/semitrivial/ions/blob/master/src/Lv2/w*3.py)
-* [ω^2](https://github.com/semitrivial/ions/blob/master/src/Lv2/w^2.py)
+* [ω<sup>2</sup>](https://github.com/semitrivial/ions/blob/master/src/Lv2/w^2.py)
 
-### Level 3 (ω to ω^3)
+### Level 3 (ω to ω<sup>3</sup>)
 
 * [ω](https://github.com/semitrivial/ions/blob/master/src/Lv3/w.py)
 * [ω^2](https://github.com/semitrivial/ions/blob/master/src/Lv3/w^2.py)
