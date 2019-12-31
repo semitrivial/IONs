@@ -1,5 +1,9 @@
+# To get from ω^3*2 to ω^3*2+ω^2, let's take w^2.py and change the
+# initial X-value from "" to w^3*2.py. Verify that the first few
+# outputs of this program notate ω^3*2, ω^3*2+ω, ω^3*2+ω*2, ...,
+# so this program notates ω^3*2+ω*ω, i.e., ω^3*2+ω^2.
 TEMPLATE="""
-X='''{}'''
+X='''___'''
 
 while True:
     output(X)
@@ -10,4 +14,4 @@ X=get_file('w^3*2.py')
 
 while True:
     output(X)
-    X = TEMPLATE.format(escape(X))
+    X = TEMPLATE.replace('___', escape(X))
