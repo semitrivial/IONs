@@ -1,4 +1,3 @@
-# Next, we review our notation for ω^3.
 TEMPLATE='''
 TEMPLATE="""
 X=\'''___\'''
