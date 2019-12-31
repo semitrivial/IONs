@@ -32,6 +32,8 @@ def compile_file(level, fname, compiled_files):
     with open(level + "/" + fname) as fp:
         raw = fp.read()
 
+    raw = strip_comments(raw)
+
     while True:
         try:
             get_file_index = raw.index(start_token)
@@ -53,5 +55,9 @@ def compile_files():
     for i in range(top_level):
         compile_level(i+1)
 
+def strip_comments(txt):
+    lines = txt.splitlines()
+    lines = [line for line in lines if not(line.startswith('#'))]
+    return "\n".join(lines)
 
 
