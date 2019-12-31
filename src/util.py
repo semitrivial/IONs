@@ -1,6 +1,17 @@
 def escape(s):
     return s.replace('\\', '\\\\').replace('"', '\\"').replace("'", "\\'")
 
+def output(x):
+    global output_counter
+    global output_was_called
+    global captured_output
+
+    output_was_called = True
+    output_counter += 1
+    captured_output = Notation(x)
+    if output_counter == output_limit:
+        raise StopIteration("Done")
+
 class Notation:
     def __init__(self, txt):
         self.txt = txt
@@ -47,17 +58,6 @@ def try_exec(x):
         print(x.txt)
         print("---")
         raise e
-
-def output(x):
-    global output_counter
-    global output_was_called
-    global captured_output
-
-    output_was_called = True
-    output_counter += 1
-    captured_output = Notation(x)
-    if output_counter == output_limit:
-        raise StopIteration("Done")
 
 def get_file(filename):
     filename = "Lv" + str(test_level) + "/compiled/" + filename
