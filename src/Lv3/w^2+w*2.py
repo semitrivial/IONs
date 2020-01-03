@@ -1,3 +1,4 @@
+## w^2+w*2.py
 # The program below is the resulting of taking w.py and changing the
 # initial value of X so that instead of starting as the empty string,
 # X starts as the contents of w^2+w.py. Convince yourself that this

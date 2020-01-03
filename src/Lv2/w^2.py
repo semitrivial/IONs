@@ -1,3 +1,4 @@
+## w^2.py
 # Look at w.py, w*2.py, and w*3.py. In like manner, you could
 # notate ω*4, ω*5, and so on. But let's be more intelligent.
 #

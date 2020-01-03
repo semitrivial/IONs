@@ -1,3 +1,4 @@
+## w.py
 # This program outputs computer programs equivalent to
 # 0.py, 1.py, 2.py, 3.py, and so on forever.
 #

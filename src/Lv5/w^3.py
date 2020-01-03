@@ -1,3 +1,4 @@
+## w^3.py
 # We notate ω^3 by starting with the notation for ω^2, replacing
 # the initial value of X2 by a wildcard X3, and then repeatedly
 # plugging the resulting template into itself. Convince yourself

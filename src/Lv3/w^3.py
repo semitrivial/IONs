@@ -1,3 +1,4 @@
+## w^3.py
 # The below program is obtained by meditating upon
 # w^2.py, w^2*2.py, w^2*3.py, figuring out the pattern,
 # and generalizing the pattern. Note the inner and outer

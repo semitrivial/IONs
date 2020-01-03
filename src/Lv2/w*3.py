@@ -1,3 +1,4 @@
+## w*3.py
 # We could write programs like w*2.py, w*2+1.py, w*2+2.py all day, but
 # we're more intelligent than that. The pattern is easy to figure out.
 #

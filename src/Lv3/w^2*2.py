@@ -1,3 +1,4 @@
+## w^2*2.py
 # In w^2+w.py and w^2+w*2.py, we changed the initial value of X
 # in w.py. What if we change the initial value of X in w^2.py?
 # Exercise: convince yourself the below program outputs notations

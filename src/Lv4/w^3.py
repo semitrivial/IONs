@@ -1,3 +1,4 @@
+## w^3.py
 # Next, we review our notation for ω^3.
 TEMPLATE='''
 TEMPLATE="""

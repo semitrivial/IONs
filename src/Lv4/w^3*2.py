@@ -1,3 +1,4 @@
+## w^3*2.py
 # In the same way, we hypothesize that to get a notation for ω^3*2,
 # we can take our program for ω^3 and change the initial X value to
 # be the contents of w^3.py (line 19 below). Verify that the first

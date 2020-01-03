@@ -1,3 +1,4 @@
+## w^w.py
 # By meditating upon w.py, w^2.py, w^3.py, and w^4.py, we discern an
 # underlying pattern, which allows us to write a single program that
 # transcends them. This program involves an infinite sequence of

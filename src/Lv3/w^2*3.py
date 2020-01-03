@@ -1,3 +1,4 @@
+## w^2*3.py
 # In w^2*2.py, we changed the initial value of X in w^2.py to be
 # the contents of w^2.py. What if instead, we change the initial
 # value of X in w^2.py to be the contents of w^2*2.py?

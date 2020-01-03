@@ -1,3 +1,4 @@
+## w^2.py
 # Next, we review our notation for ω^2.
 TEMPLATE="""
 X='''___'''

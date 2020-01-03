@@ -1,3 +1,4 @@
+## w^4.py
 # We notate ω^4 by starting with the notation for ω^3, replacing
 # the initial value of X3 by a wildcard X4, and then repeatedly
 # plugging the resulting template into itself. Convince yourself

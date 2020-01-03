@@ -1,3 +1,4 @@
+## w.py
 # We notate ω by starting with the notation for 1, replacing
 # the initial value of X0 by a wildcard X1, and then repeatedly
 # plugging the resulting template into itself. Convince yourself

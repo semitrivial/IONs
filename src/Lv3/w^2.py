@@ -1,3 +1,4 @@
+## w^2.py
 # We review the program we used to notate ω^2.
 # What if we took this program and used it as the
 # initial value for X in w.py?

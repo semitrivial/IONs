@@ -1,3 +1,4 @@
+## w+3.py
 # And to get from ω+2 to ω+3, we write a program which outputs
 # the program which we used to notate ω+2.
 #

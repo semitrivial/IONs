@@ -1,3 +1,4 @@
+## w^2.py
 # We notate ω^2 by starting with the notation for ω, replacing
 # the initial value of X1 by a wildcard X2, and then repeatedly
 # plugging the resulting template into itself. Convince yourself

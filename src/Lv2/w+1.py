@@ -1,3 +1,4 @@
+## w+1.py
 # In the same way we went from 1 to 2, we go from ω to ω+1.
 #
 # The Intuitive Ordinal Notations (IONs) are defined so that:

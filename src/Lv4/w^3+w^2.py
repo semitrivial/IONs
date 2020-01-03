@@ -1,3 +1,4 @@
+## w^3+w^2.py
 # To get from ω^3 to ω^3+ω^2, let's take w^2.py and change the
 # initial X-value from "" to w^3.py. Verify that the first few
 # outputs of this program notate ω^3, ω^3+ω, ω^3+ω*2, ...,
