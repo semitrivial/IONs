@@ -1,3 +1,4 @@
+# w^3*3.py
 TEMPLATE='''
 TEMPLATE="""
 X=\'''___\'''

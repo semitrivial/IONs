@@ -1,3 +1,4 @@
+# w.py
 TEMPLATE = """
 X0=\"\"
 output(X0)

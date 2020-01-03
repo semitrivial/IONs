@@ -21,6 +21,7 @@ def compile_level(n):
 
     for fname in compiled_files.keys():
         with open(level + "/compiled/" + fname, "w") as fp:
+            fp.write("# " + fname + "\n")
             fp.write(compiled_files[fname])
 
 def compile_file(level, fname, compiled_files):
