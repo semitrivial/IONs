@@ -1,6 +1,6 @@
 from util import *
 
-def test_level_5():
+def test_level_omega():
     def looks_like_omega(x):
         assert is_zero(x[0])
         assert is_zero(x[1]-1)

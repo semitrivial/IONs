@@ -60,7 +60,7 @@ def try_exec(x):
         raise e
 
 def get_file(filename):
-    filename = "Lv" + str(test_level) + "/compiled/" + filename
+    filename = "Level" + str(test_level) + "/compiled/" + filename
     with open(filename, "r") as fp:
         return fp.read()
 

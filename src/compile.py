@@ -4,7 +4,7 @@ from util import escape
 top_level = 5
 
 def compile_level(n):
-    level = "Lv" + str(n)
+    level = "Level" + (str(n) if n<5 else "Omega")
     compiled_files = {}
 
     for fname in os.listdir(level):
