@@ -9,7 +9,7 @@ examples of ordinal notations. Currently, the
 largest example in the library is ω<sup>ω</sup>.
 
 Think of this library as a meditation on automated code generation.
-The ordinal notations in this library are themselves computer
+The ordinal notations in this library are themseLeveles computer
 programs which output ordinal notations (except for 0.py, which
 outputs nothing). The notation for ω<sup>ω</sup> is a computer program which
 could, by its lonesome, be used to programmatically reproduce
@@ -24,52 +24,52 @@ proceeding to the next.
 
 ### Level 1 (up to ω)
 
-* 0 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/0.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/compiled/0.py)
-* 1 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/1.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/compiled/1.py)
-* 2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/compiled/2.py)
-* 3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/compiled/3.py)
-* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv1/compiled/w.py)
+* 0 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/0.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/compiled/0.py)
+* 1 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/1.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/compiled/1.py)
+* 2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/compiled/2.py)
+* 3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/compiled/3.py)
+* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level1/compiled/w.py)
 
 ### Level 2 (up to ω<sup>2</sup>)
 
-* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w.py)
-* ω+1 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w+1.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w+1.py)
-* ω+2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w+2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w+2.py)
-* ω+3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w+3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w+3.py)
-* ω·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w*2.py)
-* ω·2+1 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w*2+1.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w*2+1.py)
-* ω·2+2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w*2+2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w*2+2.py)
-* ω·3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w*3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w*3.py)
-* ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv2/compiled/w^2.py)
+* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w.py)
+* ω+1 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w+1.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w+1.py)
+* ω+2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w+2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w+2.py)
+* ω+3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w+3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w+3.py)
+* ω·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w*2.py)
+* ω·2+1 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w*2+1.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w*2+1.py)
+* ω·2+2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w*2+2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w*2+2.py)
+* ω·3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w*3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w*3.py)
+* ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level2/compiled/w^2.py)
 
 ### Level 3 (up to ω<sup>3</sup>)
 
-* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/compiled/w.py)
-* ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/compiled/w^2.py)
-* ω<sup>2</sup>+ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/w^2+w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/compiled/w^2+w.py)
-* ω<sup>2</sup>+ω·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/w^2+w*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/compiled/w^2+w*2.py)
-* ω<sup>2</sup>·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/w^2*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/compiled/w^2*2.py)
-* ω<sup>2</sup>·3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/w^2*3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/compiled/w^2*3.py)
-* ω<sup>3</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/w^3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv3/compiled/w^3.py)
+* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/compiled/w.py)
+* ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/compiled/w^2.py)
+* ω<sup>2</sup>+ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/w^2+w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/compiled/w^2+w.py)
+* ω<sup>2</sup>+ω·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/w^2+w*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/compiled/w^2+w*2.py)
+* ω<sup>2</sup>·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/w^2*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/compiled/w^2*2.py)
+* ω<sup>2</sup>·3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/w^2*3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/compiled/w^2*3.py)
+* ω<sup>3</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/w^3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level3/compiled/w^3.py)
 
 ### Level 4 (up to ω<sup>4</sup>)
 
-* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w.py)
-* ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^2.py)
-* ω<sup>3</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^3.py)
-* ω<sup>3</sup>+ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^3+w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^3+w^2.py)
-* ω<sup>3</sup>+ω<sup>2</sup>·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^3+w^2*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^3+w^2*2.py)
-* ω<sup>3</sup>·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^3*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^3*2.py)
-* ω<sup>3</sup>·2+ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^3*2+w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^3*2+w^2.py)
-* ω<sup>3</sup>·2+ω<sup>2</sup>·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^3*2+w^2*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^3*2+w^2*2.py)
-* ω<sup>3</sup>·3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^3*3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^3*3.py)
-* ω<sup>4</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/w^4.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv4/compiled/w^4.py)
+* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w.py)
+* ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^2.py)
+* ω<sup>3</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^3.py)
+* ω<sup>3</sup>+ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^3+w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^3+w^2.py)
+* ω<sup>3</sup>+ω<sup>2</sup>·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^3+w^2*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^3+w^2*2.py)
+* ω<sup>3</sup>·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^3*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^3*2.py)
+* ω<sup>3</sup>·2+ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^3*2+w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^3*2+w^2.py)
+* ω<sup>3</sup>·2+ω<sup>2</sup>·2 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^3*2+w^2*2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^3*2+w^2*2.py)
+* ω<sup>3</sup>·3 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^3*3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^3*3.py)
+* ω<sup>4</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/w^4.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Level4/compiled/w^4.py)
 
 ### Level ω (up to ω<sup>ω</sup>)
 
-* 1 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/1.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/compiled/1.py)
-* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/compiled/w.py)
-* ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/compiled/w^2.py)
-* ω<sup>3</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/w^3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/compiled/w^3.py)
-* ω<sup>4</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/w^4.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/compiled/w^4.py)
-* ω<sup>ω</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/w^w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/Lv5/compiled/w^w.py)
+* 1 [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/1.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/compiled/1.py)
+* ω [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/compiled/w.py)
+* ω<sup>2</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/w^2.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/compiled/w^2.py)
+* ω<sup>3</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/w^3.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/compiled/w^3.py)
+* ω<sup>4</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/w^4.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/compiled/w^4.py)
+* ω<sup>ω</sup> [With Commentary](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/w^w.py) or [Compiled and Uncommented](https://raw.githubusercontent.com/semitrivial/ions/master/src/LevelOmega/compiled/w^w.py)
