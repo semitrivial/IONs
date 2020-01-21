@@ -37,6 +37,9 @@ def compile_level(n):
             fp.write(compiled_files[fname])
         with open(level + "/standalone/" + fname, "w") as fp:
             fp.write("# " + fname + "\n")
+            fp.write("# This version of the file is completely standalone.")
+            fp.write("# You can actually run it in python, completely on its own,")
+            fp.write("# and you can run its outputs, and their outputs, etc.")
             fp.write("PREAMBLE = \"\"\"\n")
             fp.write(escape(STANDALONE_PREAMBLE).strip() + "\n")
             fp.write("\"\"\"\n")

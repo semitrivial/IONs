@@ -1,5 +1,5 @@
 # w+3.py
-PREAMBLE = """
+# This version of the file is completely standalone.# You can actually run it in python, completely on its own,# and you can run its outputs, and their outputs, etc.PREAMBLE = """
 def escape(s):
     return s.replace(\'\\\\\', \'\\\\\\\\\').replace(\'\"\', \'\\\\\"\').replace(\"\'\", \"\\\\\'\")
 def output(x):
