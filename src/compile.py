@@ -3,6 +3,18 @@ from util import escape
 
 top_level = 5
 
+STANDALONE_PREAMBLE = """
+def escape(s):
+    return s.replace('\\\\', '\\\\\\\\').replace('"', '\\\\"').replace("'", "\\\\'")
+def output(x):
+    print('PREAMBLE=\\\"\\\"\\\"')
+    print(escape(PREAMBLE).strip())
+    print('\\\"\\\"\\\"')
+    print('exec(PREAMBLE)')
+    print(x)
+    raw_input("---- (Press enter to continue) ----")
+"""
+
 def compile_level(n):
     level = "Level" + (str(n) if n<5 else "Omega")
     compiled_files = {}
@@ -22,6 +34,13 @@ def compile_level(n):
     for fname in compiled_files.keys():
         with open(level + "/compiled/" + fname, "w") as fp:
             fp.write("# " + fname + "\n")
+            fp.write(compiled_files[fname])
+        with open(level + "/standalone/" + fname, "w") as fp:
+            fp.write("# " + fname + "\n")
+            fp.write("PREAMBLE = \"\"\"\n")
+            fp.write(escape(STANDALONE_PREAMBLE).strip() + "\n")
+            fp.write("\"\"\"\n")
+            fp.write("exec(PREAMBLE)\n\n")
             fp.write(compiled_files[fname])
 
 def compile_file(level, fname, compiled_files):
