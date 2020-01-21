@@ -20,7 +20,9 @@ in the library.
 
 We recommend the ordinal notations in this library be read in the following
 order. Take time to reflect on each program and understand it before
-proceeding to the next.
+proceeding to the next. If you want to actually run these programs yourself
+and see their output, you can do so by running the "Standalone" versions
+linked below (using Python).
 
 ### Level 1 (up to ω)
 
