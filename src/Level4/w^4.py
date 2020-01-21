@@ -10,7 +10,7 @@
 # Verify that the first few outputs of this program
 # notate 0, ω^3, ω^3*2, ω^3*3. By induction, this
 # program notates ω^3*ω, i.e., ω^4.
-TEMPLATE=get_file('w^3.py')
+TEMPLATE=<INSERT_FILE w^3.py>
 TEMPLATE=TEMPLATE.replace('X=""', "X='''!!!'''")
 X=""
 while True:

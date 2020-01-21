@@ -16,7 +16,7 @@ while True:
     X='output(\"""' + escape(X) + '\""")'
 """
 
-X=get_file('w^2.py')
+X=<INSERT_FILE w^2.py>
 
 while True:
     output(X)

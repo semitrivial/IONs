@@ -3,7 +3,7 @@
 # the initial value of X0 by a wildcard X1, and then repeatedly
 # plugging the resulting template into itself. Convince yourself
 # the first few outputs of this program notate 0, 1, 2, ...
-TEMPLATE = get_file('1.py').replace('=\""', '=\"""X1"""')
+TEMPLATE = <INSERT_FILE 1.py>.replace('=\""', '=\"""X1"""')
 
 X1=""
 

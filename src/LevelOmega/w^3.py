@@ -3,7 +3,7 @@
 # the initial value of X2 by a wildcard X3, and then repeatedly
 # plugging the resulting template into itself. Convince yourself
 # the first few outputs of this program notate 0, ω^2, ω^2*2, ω^2*3, ...
-TEMPLATE = get_file('w^2.py').replace('=\""', '=\"""X3"""')
+TEMPLATE = <INSERT_FILE w^2.py>.replace('=\""', '=\"""X3"""')
 
 X3=""
 

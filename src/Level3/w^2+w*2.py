@@ -7,7 +7,7 @@
 # that's a utility function we use to compile an ION. The fully
 # compiled ION is obtained by replacing the get_file with an escaped
 # copy of the contents of w^2+w.py.
-X=get_file('w^2+w.py')
+X=<INSERT_FILE w^2+w.py>
 
 while True:
     output(X)

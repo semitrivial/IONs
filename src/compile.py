@@ -28,7 +28,7 @@ def compile_file(level, fname, compiled_files):
     if fname in compiled_files:
         return
 
-    start_token, end_token = "get_file('", "')"
+    start_token, end_token = "<INSERT_FILE ", ">"
 
     with open(level + "/" + fname) as fp:
         raw = fp.read()

@@ -4,7 +4,7 @@
 # transcends them. This program involves an infinite sequence of
 # wildcards X1, X2, X3, ..., and super-wildcards XX and Xi. Verify
 # that the first few outputs notate 1, ω, ω^2, ω^3, ω^4.
-X=get_file('1.py')
+X=<INSERT_FILE 1.py>
 
 TEMPLATE="""
 TEMPLATE = '''XX'''.replace('=\\""', '=\\\"\"\"Xi\"\"\"')
