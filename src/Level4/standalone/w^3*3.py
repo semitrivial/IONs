@@ -11,7 +11,11 @@ def output(x):
     print(\'\\\"\\\"\\\"\')
     print(\'exec(PREAMBLE)\')
     print(x)
-    raw_input(\"---- (Press enter to continue) ----\")
+    try: # Ensure program works in both Python2 and Python3
+        input = raw_input
+    except Exception:
+        pass
+    input(\"---- (Press enter to continue) ----\")
 """
 exec(PREAMBLE)
 
