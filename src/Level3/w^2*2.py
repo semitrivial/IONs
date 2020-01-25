@@ -5,9 +5,9 @@
 # for for ω^2, ω^2+ω, ω^2+ω*2, ω^2+ω*3, ...
 # Therefore, it notates ω^2+ω^2, i.e., (ω^2)*2.
 #
-# NOTE: If you see "get_file", that's a utility function for
+# NOTE: If you see "INSERT_FILE", that's a utility signal for
 # compiling an ION. The compiled ION is obtained by replacing the
-# "get_file" with an escaped copy of w^2.py.
+# "INSERT_FILE" with an escaped copy of w^2.py.
 TEMPLATE="""
 X='''___'''
 

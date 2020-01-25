@@ -3,8 +3,8 @@
 # initial X-value from "" to w^3.py. Verify that the first few
 # outputs of this program notate ω^3, ω^3+ω, ω^3+ω*2, ...,
 # so this program notates ω^3+ω*ω, i.e., ω^3+ω^2.
-# NOTE: If you see "get_file", that's a util function. The
-# compiled ION is obtained by replacing the get_file with an
+# NOTE: If you see "INSERT_FILE", that's a util signal. The
+# compiled ION is obtained by replacing the INSERT_FILE with an
 # escaped copy of the contents of w^3.py.
 TEMPLATE="""
 X='''___'''
