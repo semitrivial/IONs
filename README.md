@@ -9,7 +9,7 @@ examples of ordinal notations. Currently, the
 largest example in the library is ω<sup>ω</sup>.
 
 Think of this library as a meditation on automated code generation.
-The ordinal notations in this library are themseLeveles computer
+The ordinal notations in this library are themselves computer
 programs which output ordinal notations (except for 0.py, which
 outputs nothing). The notation for ω<sup>ω</sup> is a computer program which
 could, by its lonesome, be used to programmatically reproduce
