@@ -15,4 +15,4 @@ while True:
 
 while True:
     output(X)
-    X = "output(\"\"\"\n" + escape(X) + "\n\"\"\")"
+    X = "output(\"\"\"" + escape(X) + "\"\"\")"
