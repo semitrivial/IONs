@@ -12,11 +12,10 @@ def output(x):
     print('\\\"\\\"\\\"')
     print('exec(PREAMBLE)')
     print(x)
-    try: # Ensure program works in both Python2 and Python3
-        input = raw_input
+    try:
+        input("---- (Press enter to continue) ----")
     except Exception:
         pass
-    input("---- (Press enter to continue) ----")
 """
 
 def compile_level(n):
